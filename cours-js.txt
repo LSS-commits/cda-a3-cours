@@ -1,0 +1,15 @@
+### JAVASCRIPT ###
+
+Utilité = interaction utilisateur, manipulation du DOM, aspect algo (créer des boucles etc)
+Inconvénients = pas de communication avec le serveur, pas de gestion de fichiers (création, écriture, etc). D'où l'invention de Node.js 
+
+DOM = Document Object Model, modèle objet d'une page HTML 
+Objet window est le plus grand 
+> Objets document, location, navigation, history, etc
+=> https://www.w3schools.com/jsref/obj_window.asp 
+> html 
+> etc 
+
+ATTENTION compatibilité des navigateurs = tous les browsers sont obligt compatibles avec ECMAScript 2009, les plus gros browsers supportent ECMAScript 2022. Attention à la syntaxe utilisée
+
+NB querySelector prend en compte les sélecteurs css, donc on peut utiliser not first child par ex.
