@@ -43,7 +43,7 @@ var lien = document.querySelector("[href='http://www.francefootball.fr']")
 
 // récupérer la valeur de l'attribut
 var lien = document.querySelector('a')
-console.log(lien.getAttribute('href'));
+// console.log(lien.getAttribute('href'));
 
 // modifier le lien au clic sur le bouton switch
 function switchLink() {
@@ -58,3 +58,33 @@ function switchLink() {
     lien.innerHTML = "consultez l'actualité"
 }
 
+
+var firstParagraphe = document.querySelector('p')
+// retourne un tableau
+// console.log(firstParagraphe.classList);
+// retourne une string
+// console.log(firstParagraphe.className);
+
+var classes = firstParagraphe.classList
+// classes.remove('rouge')
+// classes.add('bleu')
+// OU SIMPLEMENT
+// classes.replace('rouge', 'bleu') 
+
+// toggle = si on trouve on supprime, si on ne trouve pas on ajoute
+// classes.toggle('rouge')
+// classes.toggle('bleu')
+
+// console.log(classes.contains('rouge'));
+
+// switcher les couleurs
+function changeColor(){
+    for (const paragraphe of paragraphes) {
+        let paragClass = paragraphe.classList
+        if (paragClass.contains('bleu')) {
+            paragClass.replace('bleu', 'rouge')
+        }else{
+            paragClass.replace('rouge', 'bleu')
+        }
+    }
+}

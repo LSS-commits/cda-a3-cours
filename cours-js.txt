@@ -22,3 +22,15 @@ NB RACCOURCIS VSC
 alt + flèche bas ou rester cliquer sur mollette souris et descendre => pour écrire du texte dans plusieurs balises 
 ctrl + F2 pour sélectionner toutes les occurrences
 Navigation entre les occurrences => ctrl + d vers la prochaine, ctrl + u vers la précédente
+
+Pour accéder à la classe d'un élément
+classList = tableau de toutes les classes d'un élément 
+className = string de toutes les classes
+
+ATTENTION
+TOUTE METHODE OU FONCTION QUI COMMENCE OU CONTIENT UN VERBE CONJUGUE RETOURNE UN BOOLEEN 
+Ex : contains() 
+Check matches() => https://developer.mozilla.org/fr/docs/Web/API/Element/matches 
+
+ATTENTION 
+toggle est plus coûteux car contient un if else, utiliser plutôt un replace
