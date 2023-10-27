@@ -3,7 +3,6 @@ var boldBtn = document.querySelector(".bold");
 var italicBtn = document.querySelector(".italic");
 var underlineBtn = document.querySelector(".underline");
 var clearBtn = document.querySelector(".clear");
-var textStyles = ["bold", "italic", "underline"];
 
 boldBtn.addEventListener("click", () => {   
     if (textContent.style.fontWeight !== "bold") {
