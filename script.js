@@ -19,7 +19,7 @@ var rouges = document.getElementsByClassName('rouge')
 // }
 
 
-var paragraphes = document.getElementsByTagName('p')
+// var paragraphes = document.getElementsByTagName('p')
 // for (const paragraphe of paragraphes) {
 //     console.log(paragraphe.innerHTML);
 // }
@@ -60,6 +60,7 @@ function switchLink() {
 
 
 var firstParagraphe = document.querySelector('p')
+firstParagraphe.style.fontStyle = 'italic'
 // retourne un tableau
 // console.log(firstParagraphe.classList);
 // retourne une string
@@ -79,6 +80,8 @@ var classes = firstParagraphe.classList
 
 // switcher les couleurs
 function changeColor(){
+    var paragraphes = document.getElementsByTagName('p')
+
     for (const paragraphe of paragraphes) {
         let paragClass = paragraphe.classList
         if (paragClass.contains('bleu')) {
@@ -88,3 +91,6 @@ function changeColor(){
         }
     }
 }
+
+// on peut utiliser removeAttribute pour supprimer un attribut 
+// ex : lien.removeAttribute('href')
