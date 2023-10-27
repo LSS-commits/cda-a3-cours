@@ -1,0 +1,8 @@
+### GIT ###
+git init 
+git add . 
+git commit -m "message"
+git log --oneline => afficher la liste des commits, un commit par ligne (git log affiche trop d'infos) 
+
+NB 
+ls pour lister les fichiers d'un répertoire
