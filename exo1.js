@@ -5,38 +5,32 @@ var underlineBtn = document.querySelector(".underline");
 var clearBtn = document.querySelector(".clear");
 var textStyles = ["bold", "italic", "underline"];
 
-var boldText = () => {
+boldBtn.addEventListener("click", () => {   
     if (textContent.style.fontWeight !== "bold") {
         textContent.style.fontWeight = "bold";
     }else{
         textContent.style.fontWeight = "normal";
     }
-}
+});
 
-var italicText = () => {
+italicBtn.addEventListener("click", () => {
     if (textContent.style.fontStyle !== "italic") {
         textContent.style.fontStyle = "italic";
     }else{
         textContent.style.fontStyle = "normal";
     }
-}
-var underlineText = () => {
+});
+
+underlineBtn.addEventListener("click", () => {
     if (textContent.style.textDecoration !== "underline") {
         textContent.style.textDecoration = "underline";
     }else{
         textContent.style.textDecoration = "none";
     }
-}
+});
 
-
-
-var clearStyles = () => {
+clearBtn.addEventListener("click", () => {
     textContent.style.fontWeight = "normal";
     textContent.style.fontStyle = "normal";
     textContent.style.textDecoration = "none"; 
-}
-
-boldBtn.addEventListener("click", boldText);
-italicBtn.addEventListener("click", italicText);
-underlineBtn.addEventListener("click", underlineText);
-clearBtn.addEventListener("click", clearStyles);
+});
